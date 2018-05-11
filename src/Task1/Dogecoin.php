@@ -2,10 +2,7 @@
 
 namespace Cryptocurrency\Task1;
 
-class Bitcoin implements CryptoCurrency
-=======
-class Bitcoin implements Currency
->>>>>>> 6b468bd325ebe99b795413c42d264e50df839bb0
+class Dogecoin implements Currency
 {
     private $name;
     private $logo;
@@ -13,8 +10,8 @@ class Bitcoin implements Currency
 
     public function __construct(float $price)
     {
-        $this->name = 'Bitcoin';
-        $this->logo = 'https://s2.coinmarketcap.com/static/img/coins/32x32/1.png';
+        $this->name = 'Dogecoin';
+        $this->logo = 'https://s2.coinmarketcap.com/static/img/coins/32x32/74.png';
         $this->price = $price;
     }    
 
