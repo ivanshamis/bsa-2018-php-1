@@ -6,16 +6,21 @@ class CoinMarket
 {
     public function addCurrency(Currency $currency): void
     {
-        // @todo!!!
+        $this->currencies[] = $currency;
     }
 
     public function maxPrice(): float
     {
-        // @todo!!!
+        $max = 0;
+        foreach ($this->currencies as $currency)
+            {
+                $max = max($max,$currency->getDailyPrice());
+            }
+        return $max;
     }
 
     public function getCurrencies(): array
     {
-        // @todo!!!
+        return $this->currencies;
     }
 }
