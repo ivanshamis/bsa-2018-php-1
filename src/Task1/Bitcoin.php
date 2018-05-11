@@ -2,7 +2,7 @@
 
 namespace Cryptocurrency\Task1;
 
-class Bitcoin extends CryptoCurrency
+class Bitcoin implements CryptoCurrency
 {
     private $name;
     private $logo;
@@ -15,19 +15,19 @@ class Bitcoin extends CryptoCurrency
         $this->price = $price;
     }    
 
-    public function getName(): string;
+    public function getName(): string
     {
-        return this->name;
+        return $this->name;
     }
 
-    public function getDailyPrice(): float;
+    public function getDailyPrice(): float
     {
-        return this->price;
+        return $this->price;
     }
 
-    public function getLogoUrl(): string;
+    public function getLogoUrl(): string
     {
-        return this->logo;
+        return $this->logo;
     }
     
 }
