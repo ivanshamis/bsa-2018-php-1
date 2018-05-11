@@ -2,7 +2,7 @@
 
 namespace Cryptocurrency\Task1;
 
-class Bitcoin implements Currency
+class Ethereum implements Currency
 {
     private $name;
     private $logo;
@@ -10,8 +10,8 @@ class Bitcoin implements Currency
 
     public function __construct(float $price)
     {
-        $this->name = 'Bitcoin';
-        $this->logo = 'https://s2.coinmarketcap.com/static/img/coins/32x32/1.png';
+        $this->name = 'Ethereum';
+        $this->logo = 'https://s2.coinmarketcap.com/static/img/coins/32x32/1027.png';
         $this->price = $price;
     }    
 
