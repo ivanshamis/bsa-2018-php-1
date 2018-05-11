@@ -14,7 +14,7 @@ class CoinMarket
         $max = 0;
         foreach ($this->currencies as $currency)
             {
-                //$max = max($max,$currency->getDailyPrice());
+                $max = max($max,$currency->getDailyPrice());
             }
         return $max;
     }
