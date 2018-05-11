@@ -6,12 +6,12 @@ class CoinMarket
 {
     public function addCurrency(Currency $currency): void
     {
-        // @todo!
+        // @todo!!!
     }
 
     public function maxPrice(): float
     {
-        // @todo!!
+        // @todo!!!
     }
 
     public function getCurrencies(): array
