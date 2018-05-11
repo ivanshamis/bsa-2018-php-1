@@ -2,7 +2,7 @@
 
 namespace Cryptocurrency\Task1;
 
-class Bitcoin implements CryptoCurrency
+class Bitcoin implements Currency
 {
     private $name;
     private $logo;
